@@ -56,9 +56,11 @@
        
           
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Launch demo modal
-          </button>
+          <li><a class="nav-link scrollto"> 
+            <button style="border-radius: 50px;" type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Loguin
+          </button></a></li>
+         
           
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -77,7 +79,7 @@
           <h1>Veterinaria Grattone</h1>
           <h2>Tu mascota, nuestra pasión: Cuidado y amor en cada ocasión</h2>
           <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+            <a href="#about" class="btn-get-started scrollto">Comenzemos</a>
            
           </div>
         </div>
@@ -369,38 +371,36 @@
 <!-- Button trigger modal -->
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div  class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
+      <div style="background-color: #9257b4;" class="modal-header">
         <h1 class="modal-title fs-5" id="exampleModalLabel"><h2>Inicio de sesion</h2></h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
+      <div style="background-color: #7b0abd;" class="modal-body">
         <div class="container">
           
           <form action="#" method="GET">
             <div class="form-group">
-              <label for="username">User:</label>
+              <label style="color: white;" for="username">User:</label>
               <br>
               <input type="text" id="username" name="nombrel" required>
             </div>
             <div class="form-group">
-              <label for="password">password:</label>
+              <label style="color: white;" for="password">password:</label>
               <br>
               <input type="password" id="password" name="contraseña" required>
             </div>
         <br>
-            <div class="form-group">
-              <button type="submit">Log in</button>
+        
+            <div >
+              <button class="btn btn-primary" type="submit">Log in</button>
             </div>
           </form>
         </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+      
     </div>
   </div>
 </div>
