@@ -1,5 +1,5 @@
-<!-- ======= Header ======= -->
-<header id="header" class="fixed-top ">
+ <!-- ======= Header ======= -->
+ <header style="background: rgba(40, 58, 90, 0.9);" id="header" >
     <div class="container d-flex align-items-center">
   <img src="templete/assets/img/vet_logo.png" width="100px" alt="">
       <h1 class="logo me-auto"><a href="index.html">Veterinaria</a></h1>
@@ -15,9 +15,12 @@
        
           
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Launch demo modal
-          </button>
+          <a href="php/cerrarsesion.php"><button style="border-radius: 50px;" type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Cerrar Sesion
+          </button></a>
+           </a>
+        
+         
           
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
