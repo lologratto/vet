@@ -1,5 +1,5 @@
 <!-- ======= Footer ======= -->
-<footer style="background: #37517e;" id="footer">
+<footer style="background: #37517e;position: fixed;bottom:0; width: 100%;" id="footer" >
 
     
 
