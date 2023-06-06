@@ -1,5 +1,5 @@
 <?php
-require "conexion.php";
+require "../php/conexion.php";
 $u=$_GET['usuario'];
 $c=$_GET['contraseña'];
 $q="select * from usuarios where usuario= '$u' and contraseña='$c' ";
