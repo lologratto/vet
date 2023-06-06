@@ -15,13 +15,13 @@ require "../../php/cabecera2.php"
   <link href="../../templete/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="../../templete/assets/css/style.css" rel="stylesheet">
 </head>
-<body style=" background: #7b0abd;">
+<body style=" background: white">
   
 
   <div class="container text-center" style="border: 1px #000;">
         <div class="row">
           <div class="col-8">
-          <center> <h1 style="color: white;">Clientes</h1></center> 
+          <center> <h1 style="">Clientes</h1></center> 
           </div>
           <div class="col">
             
@@ -31,15 +31,14 @@ require "../../php/cabecera2.php"
       <br>
       <div>
       <div class="caja3 text-center">
-              <label style="color: white;" for="">tipo: </label>
-        <input type="date" class="m-3">
+          
+        <div class="col-8"><a href="cliente2.php?id_cliente=0&funcion=A"><img src="../../img/mas.png" width="50" alt=""></a></div>
         
-        <a href="cliente2.php?id_cliente=0&funcion=A"><img src="../../img/mas.png" width="50" alt=""></a>
         <table class="table caja2" border="2px"> 
          </div >
         
 
-        <table class="table caja2" border="2px">
+        <table class="table table-bordered border-white table-dark table-hover" border="2px">
         <thead class="m-1">
       
         <thead>
@@ -59,9 +58,9 @@ require "../../php/cabecera2.php"
  
   while( $datos=mysqli_fetch_array($r)){
     echo("<tr>");
-    echo("<td scope='row'> <a href='cliente2.php?id_cliente=".$datos['id_cliente']."&funcion=M'><img src='../../img/boton-editar.png' alt=''></a>
+    echo("<td scope='row'> <a href='cliente2.php?id_cliente=".$datos['id_cliente']."&funcion=M' ><img src='../../img/dibujo (1).png' alt='' ></a>
   
-  <a href='cliente2.php?id_cliente=".$datos['id_cliente']."&funcion=B'><img src='../../img/borrar.png' alt=''></a>
+  <a href='cliente2.php?id_cliente=".$datos['id_cliente']."&funcion=B'><img src='../../img/borrar (3).png' alt=''></a>
   
   <td>". $datos['nombrec']."</td><td>".$datos['direccion']."</td><td>".$datos['te']."</td>");
    echo("</tr>");
