@@ -8,12 +8,12 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
+          <li><a class="nav-link scrollto " href="../../p_principal.php">Inicio</a></li>
           <li><a class="nav-link scrollto" href="#" target="_blanck">Clientes</a></li>
           <li><a class="nav-link scrollto" href="#">Historias</a></li>
           <li><a class="nav-link scrollto" href="#">Raza</a></li>
           <li><a class="nav-link scrollto" href="#">Tipos</a></li> 
-          <li><a class="nav-link scrollto" href="#contact">Masotas</a></li>
+          <li><a class="nav-link scrollto" href="#">Masotas</a></li>
           
          
           

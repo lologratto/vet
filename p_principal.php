@@ -16,8 +16,18 @@ $nomusuario=$_SESSION["usuario"];
 <?php
 require "php/cabecera.php"
 ?>
-<h1>Hola</h1>
+<body>
+<section id="services" class="services section-bg">
+      
+
+        <img src="templete/assets/img/vet4.jpg" width="50%" alt="">
+        <img src="templete/assets/img/vet5.jpg" width="50%" alt="">
+
+      
+    </section><!-- End Services Section -->
+  
+</body>
 <?php
-require "php/pie.php"
+require "php/pie2.php"
 ?>
 

@@ -9,8 +9,8 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="proceso/cliente/cliente.php" target="_blanck">Clientes</a></li>
+          <li><a class="nav-link scrollto" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="proceso/cliente/cliente.php" >Clientes</a></li>
           <li><a class="nav-link scrollto" href="#services">Historias</a></li>
           <li><a class="nav-link scrollto" href="#services">Raza</a></li>
           <li><a class="nav-link scrollto" href="#services">Tipos</a></li> 

@@ -18,23 +18,24 @@ require "../../php/cabecera2.php"
 <body style=" background: white">
   
 
-  <div class="container text-center" style="border: 1px #000;">
+<div class="container text-center">
         <div class="row">
-          <div class="col-8">
-          <center> <h1 style="">Clientes</h1></center> 
+          <div class="col">
+            
+          </div>
+          <div  class="col border border-danger border-5" >
+            <h1>Clientes</h1>
           </div>
           <div class="col">
             
           </div>
         </div>
       </div>
-      <br>
-      <div>
-      <div class="caja3 text-center">
+      
           
-        <div class="col-8"><a href="cliente2.php?id_cliente=0&funcion=A"><img src="../../img/mas.png" width="50" alt=""></a></div>
+        <div ><a href="cliente2.php?id_cliente=0&funcion=A"><img src="../../img/mas.png" width="50" alt=""></a></div>
         
-        <table class="table caja2" border="2px"> 
+         
          </div >
         
 
