@@ -5,6 +5,8 @@ if(!isset ($_SESSION['usuario'])){
 }
 $nomusuario=$_SESSION["usuario"];
 ?>
+<title>GraVet</title>
+<link href="templete/assets/img/vet_logo_chico.png" rel="icon">
 <link href="templete/assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="templete/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="templete/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
