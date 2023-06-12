@@ -22,7 +22,7 @@ require "../../php/cabecera2.php"
           <div class="col">
             
           </div>
-          <div  class="col border border-danger border-5" >
+          <div  style="border-radius: 50px;" class="col border border-danger border-5" >
             <h1>Clientes</h1>
           </div>
           <div class="col">

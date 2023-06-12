@@ -14,7 +14,7 @@ if($F=="A"){
     $q="insert into clientes (nombrec, direccion, te) values ('$u', '$n', '$c') ";
 }
 elseif($F=="M"){
-    $q="update clientes set nombrec='$u', direccion='$n' where id_cliente=$id";
+    $q="update clientes set nombrec='$u', direccion='$n', te='$c' where id_cliente=$id";
 }
 else
 {

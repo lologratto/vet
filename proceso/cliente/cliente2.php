@@ -1,3 +1,4 @@
+
 <?php 
 require "../../php/cabecera2.php"
 ?>
@@ -16,11 +17,37 @@ require "../../php/cabecera2.php"
   <link href="../../templete/assets/css/style.css" rel="stylesheet">
 </head>
 <body style=" background: #7b0abd;">
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    /* Estilos para los input */
+    input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    /* Estilos para los input de tipo "text" */
+    input[type="text"] {
+      /* Agrega estilos adicionales específicos para el tipo de input "text" */
+    }
+
+    
+    /* Estilos para los input de tipo "submit" */
+    input[type="submit"] {
+      /* Agrega estilos adicionales específicos para el tipo de input "submit" */
+    }
+  </style>
+
 <?php
 require "../../php/conexion.php";
 $id = $_GET['id_cliente'];
 $F=$_GET['funcion'];
+
  
+
 if ($F !="A"){
     // modificar y borrar
     $q="select * from clientes where id_cliente=$id";
@@ -31,17 +58,20 @@ if ($F !="A"){
     <?php
     echo ( "<center>");
     echo(" <form action='cliente3.php' method='GET'>");
-        
+    echo("<label for='exampleInputEmail1' class='form-label' style='color: white;'>N° ID</label>");
          echo(  " <input type='text' name='id_cliente' readonly value=".$datos['id_cliente'].">");
           echo(  "<br>");
+          echo("<label for='exampleInputEmail1' class='form-label' style='color: white;'>NOMBRE</label>");
           echo( " <input type='text' name='nombre' placeholder='nombre' value=".$datos['nombrec'].">");
           echo(  "<br>");
+          echo("<label for='exampleInputEmail1' class='form-label' style='color: white;'>DIRECCION</label>");
            echo( "<input type='text' name='direccion' placeholder='direccion' value=".$datos['direccion'].">");
            echo(  "<br>");
+           echo("<label for='exampleInputEmail1' class='form-label' style='color: white;'>TELEFONO</label>");
            echo("<input type='text' name='telefono' placeholder='telefono' value=".$datos['te'].">");
            echo(  "<br>");
-           echo("<input type='text' name='funcion' value=".$F.">");
-           echo(  "<br>");
+           echo("<input type='hidden' name='funcion' value=".$F.">");
+           
            echo( "<input type='submit' value='modificar'>");
            
     echo ("</form>");
@@ -58,8 +88,8 @@ else{
      echo(  "<br>");
      echo("<input type='text' name='telefono' placeholder='telefono' >");
      echo(  "<br>");
-     echo("<input type='text' readonly name='funcion' value=".$F.">");
-     echo(  "<br>");
+     echo("<input type='hidden' readonly name='funcion' value=".$F.">");
+     
      echo( "<input type='submit' value='agregar'>");
 echo ("</form>");
 
