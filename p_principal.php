@@ -23,11 +23,13 @@ require "php/cabecera.php"
       
 
         <img src="templete/assets/img/vet4.jpg" width="50%" alt="">
-        <img src="templete/assets/img/vet5.jpg" width="50%" alt="">
+        
 
       
     </section><!-- End Services Section -->
-  
+    <div id="barra_de_estado" style="background-color: red; color: white;">
+  estado
+</div>
 </body>
 <?php
 require "php/pie2.php"

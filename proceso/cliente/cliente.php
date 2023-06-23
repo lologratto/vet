@@ -40,7 +40,7 @@ require "../../php/cabecera2.php"
 
         <table class="table table-bordered border-white table-dark table-hover" border="2px">
         <thead class="m-1">
-      
+      <div class="container-md">
         <thead>
           <tr>
             <th scope="col">funciones</th>
@@ -49,7 +49,8 @@ require "../../php/cabecera2.php"
             <th scope="col">Direccion</th>
             <th scope="col">Telefono</th>
           </tr>
-        </thead>
+        </thead></div>
+        
         <tbody>
   <?php
   require "../../php/conexion.php";
