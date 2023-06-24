@@ -58,15 +58,19 @@ if ($F !="A"){
     echo ( "<center>");
     echo(" <form action='mascota3.php' method='GET'>");
     echo("<label for='exampleInputEmail1' class='form-label' style='color: white;'> N° ID </label>");
+    echo(  "<br>");
          echo(  " <input type='text' name='id_mascota' readonly value=".$datos['id_mascota'].">");
           echo(  "<br>");
           echo("<label for='exampleInputEmail1' class='form-label' style='color: white;'>NOMBRE</label>");
+          echo(  "<br>");
           echo( " <input type='text' name='nombre' placeholder='nombre' value=".$datos['nombre'].">");
           echo(  "<br>");
           echo("<label for='exampleInputEmail1' class='form-label' style='color: white;'>FECHA DE NACIMIENTO</label>");
-           echo( "<input type='text' name='fecha' placeholder='direccion' value=".$datos['fecha_nac'].">");
+          echo(  "<br>");
+           echo( "<input type='date' name='fecha' placeholder='direccion' value=".$datos['fecha_nac'].">");
            echo(  "<br>");
            echo("<label for='exampleInputEmail1' class='form-label' style='color: white;'>CLIENTE</label>");
+           echo(  "<br>");
            echo("<select id='cliente' name='cliente'>");
            require "../../php/conexion.php";
            $q="select * from clientes order by nombrec";
@@ -77,6 +81,7 @@ if ($F !="A"){
            echo("</select>");
            echo(  "<br>");
            echo("<label for='exampleInputEmail1' class='form-label' style='color: white;'>TIPO</label>");
+           echo(  "<br>");
            echo("<select id='tipo' name='tipo'>");
            require "../../php/conexion.php";
            $q="select * from tipos order by tipo";
@@ -87,6 +92,7 @@ if ($F !="A"){
            echo("</select>");
            echo(  "<br>");
            echo("<label for='exampleInputEmail1' class='form-label' style='color: white;'>RAZA</label>");
+           echo(  "<br>");
            echo("<select id='raza' name='raza'>");
            require "../../php/conexion.php";
            $q="select * from razas order by raza";
@@ -94,7 +100,9 @@ if ($F !="A"){
            while($valores=mysqli_fetch_array($r)){
             echo("<option value=". $valores['id_raza'].">". $valores['raza']."</option>");
            }
+           
            echo("</select>");
+           echo(  "<br>");
            echo(  "<br>");
            echo("<input type='hidden' name='funcion' value=".$F.">");
            
@@ -110,9 +118,12 @@ else{
    // echo(  " <input type='text' name='id_cliente' readonly value=".$datos['id_mascota'].">");
     echo( " <input type='text' name='nombre' placeholder='nombre' >");
     echo(  "<br>");
-     echo( "<input type='text' name='fecha' placeholder='fecha de nacimiento' >");
+    echo("<label for='exampleInputEmail1' class='form-label' style='color: white;'>FECHA DE NACIMIENTO</label>");
+     echo(  "<br>");
+     echo( "<input type='date' name='fecha' placeholder='fecha de nacimiento' >");
      echo(  "<br>");
      echo("<label for='exampleInputEmail1' class='form-label' style='color: white;'>CLIENTE</label>");
+     echo(  "<br>");
      echo("<select id='cliente' name='cliente'>");
      require "../../php/conexion.php";
      $q="select * from clientes order by nombrec";
@@ -123,6 +134,7 @@ else{
      echo("</select>");
      echo(  "<br>");
      echo("<label for='exampleInputEmail1' class='form-label' style='color: white;'>TIPO</label>");
+     echo(  "<br>");
      echo("<select id='tipo' name='tipo'>");
      require "../../php/conexion.php";
      $q="select * from tipos order by tipo";
@@ -133,6 +145,7 @@ else{
      echo("</select>");
      echo(  "<br>");
      echo("<label for='exampleInputEmail1' class='form-label' style='color: white;'>RAZA</label>");
+     echo(  "<br>");
      echo("<select id='raza' name='raza'>");
      require "../../php/conexion.php";
      $q="select * from razas order by raza";
@@ -150,6 +163,7 @@ echo ("</form>");
 
 }
 ?>
+<br>
 <?php 
-require "../../php/pie.php"
+require "../../php/pie2.php"
 ?>
