@@ -58,7 +58,7 @@ if ($F !="A"){
     <?php
     echo ( "<center>");
     echo(" <form action='cliente3.php' method='GET'>");
-    echo("<label for='exampleInputEmail1' class='form-label' style='color: white;'>N° ID</label>");
+    echo("<label for='exampleInputEmail1' class='form-label' style='color: white;'> N° ID </label>");
          echo(  " <input type='text' name='id_cliente' readonly value=".$datos['id_cliente'].">");
           echo(  "<br>");
           echo("<label for='exampleInputEmail1' class='form-label' style='color: white;'>NOMBRE</label>");
